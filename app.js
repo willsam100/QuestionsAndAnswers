@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
+app.set('port', (process.env.PORT || 3000));
 
 
 app.get('/', function(req, res) {
@@ -83,10 +84,7 @@ app.post('/answer', function(req, res) {
 
 });
 
-
-
-
-var server = app.listen(3000, function() {
+var server = app.listen(app.get('port'), function() {
 
   var host = server.address().address;
   var port = server.address().port;
