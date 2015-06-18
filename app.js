@@ -22,7 +22,7 @@ app.get('/question', function(req, res) {
 
   console.log('Question was asked');
   // res.send('would you like to go on a date with me?');
-  res.send('what is your favourite movie?');
+  res.send('would you like to go on a data with me?');
 });
 
 
