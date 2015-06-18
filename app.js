@@ -10,6 +10,13 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 
+app.get('/', function(req, res) {
+
+  console.log('Checking is running');
+  res.send('running');
+});
+
+
 app.get('/question', function(req, res) {
 
   console.log('Question was asked');
