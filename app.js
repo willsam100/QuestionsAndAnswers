@@ -17,7 +17,6 @@ app.get('/', function(req, res) {
   res.send('running');
 });
 
-
 app.get('/question', function(req, res) {
 
   console.log('Question was asked');
